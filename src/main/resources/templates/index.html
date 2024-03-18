@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Musical Index Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/index.css}">
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .navigation {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    
+        <h1>Welcome to the Musical World</h1>
+    </div>
+    
+    <div class="navigation">
+        <a href="login">🎵 LOGIN</a>
+        <br/><br/>
+        <a href="registration">🎶 REGISTER</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Musical Harmony Inc.</p>
+    </div>
+</body>
+</html>
+

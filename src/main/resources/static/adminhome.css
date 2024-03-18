@@ -1,0 +1,36 @@
+body {
+    background-image: url('bgred3.jpg'); /* If image is in the same directory */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #800000;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Songs</title>
+    <link rel="stylesheet" type="text/css" href="displaysongs.css">
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Artist</th>
+                <th>Genre</th>
+                <th>Controls</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="song:${songs}">
+                <td th:text="${song.name}"></td>
+                <td th:text="${song.artist}"></td>
+                <td th:text="${song.genre}"></td>
+
+                <td>
+                    <!-- Custom play/pause buttons -->
+                    <button class="play-button"></button>
+                    <!-- Native audio controls -->
+                    <audio controls>
+                        <source th:src="${song.link}">
+                    </audio>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

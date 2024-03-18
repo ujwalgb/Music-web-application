@@ -1,0 +1,38 @@
+.header h1 {
+    color: white;
+}
+body {
+    background-image: url('bgred.png'); /* If image is in the same directory */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px; /* Adjust as needed */
+}
+
+.navigation a:hover {
+    color: lightgray; /* Change color on hover */
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px; /* Adjust as needed */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+}
